@@ -29,32 +29,32 @@ require_once _PS_MODULE_DIR_.'yellow_bitcoin/includer.php';
 
 class YellowBitcoinDbLog extends ObjectModel
 {
-    public $id_yellow_bitcoin_log;
-    public $message;
-    public $reference;
-    public $date_add;
-    public $date_upd;
+	public $id_yellow_bitcoin_log;
+	public $message;
+	public $reference;
+	public $date_add;
+	public $date_upd;
 
-    public static $definition = array(
-        'table' => 'yellow_bitcoin_log',
-        'primary' => 'id_yellow_bitcoin_log',
-        'fields' => array(
-            'reference' => 			array('type' => self::TYPE_STRING, 'validate' => 'isCleanHtml'),
-            'message' => 			array('type' => self::TYPE_STRING, 'validate' => 'isCleanHtml'),
-            'date_add' => 			array('type' => self::TYPE_DATE, 'validate' => 'isDate'),
-            'date_upd' => 			array('type' => self::TYPE_DATE, 'validate' => 'isDate'),
-        ),
-    );
+	public static $definition = array(
+		'table' => 'yellow_bitcoin_log',
+		'primary' => 'id_yellow_bitcoin_log',
+		'fields' => array(
+			'reference' => 			array('type' => self::TYPE_STRING, 'validate' => 'isCleanHtml'),
+			'message' => 			array('type' => self::TYPE_STRING, 'validate' => 'isCleanHtml'),
+			'date_add' => 			array('type' => self::TYPE_DATE, 'validate' => 'isDate'),
+			'date_upd' => 			array('type' => self::TYPE_DATE, 'validate' => 'isDate'),
+		),
+	);
 
-    public static function log($reference, $message)
-    {
-        if (!Configuration::get('YELLOWPAY_DBLOG'))
-            return false;
+	public static function log($reference, $message)
+	{
+		if (!Configuration::get('YELLOWPAY_DBLOG'))
+			return false;
 
-        $log = new self();
-        $log->reference = pSQL($reference);
-        $log->message = pSQL($message);
+		$log = new self();
+		$log->reference = pSQL($reference);
+		$log->message = pSQL($message);
 
-        $log->add();
-    }
+		$log->add();
+	}
 }
