@@ -1,1 +1,1 @@
-`Belvg_YellowPay` module for Prestashop
+`YellowPay` module for Prestashop
