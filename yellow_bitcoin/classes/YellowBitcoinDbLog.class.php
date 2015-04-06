@@ -18,11 +18,11 @@
  * versions in the future.
  * ****************************************************
  *
- * @category    Belvg
- * @package    Belvg_YellowPay
+ * @category    Yellow
+ * @package    YellowPay
  * @author    Alexander Simonchik <support@belvg.com>
  * @copyright Copyright (c) 2010 - 2015 BelVG LLC. (http://www.belvg.com)
- * @license   http://store.belvg.com/BelVG-LICENSE-COMMUNITY.txt
+ * @license   https://github.com/YellowPay/yellow-prestashop/blob/master/yellow_bitcoin/Yellow-license.txt
  */
 
 require_once _PS_MODULE_DIR_.'yellow_bitcoin/includer.php';
