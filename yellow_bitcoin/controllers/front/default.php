@@ -20,8 +20,8 @@
  *
  * @category    Yellow
  * @package    YellowPay
- * @author    Alexander Simonchik <support@belvg.com>
- * @copyright Copyright (c) 2010 - 2015 BelVG LLC. (http://www.belvg.com)
+ * @author    Alexander Simonchik
+ * @copyright Copyright (c) Yellow, Inc. (http://yellowpay.co)
  * @license   https://github.com/YellowPay/yellow-prestashop/blob/master/yellow_bitcoin/Yellow-license.txt
  */
 
