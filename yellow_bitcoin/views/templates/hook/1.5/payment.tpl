@@ -23,10 +23,10 @@
  * @copyright Copyright (c) Yellow, Inc. (http://yellowpay.co)
  * @license   https://github.com/YellowPay/yellow-prestashop/blob/master/yellow_bitcoin/Yellow-license.txt
 *}
-
 <div class="row">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <div class="col-xs-12">
-        <div class="payment_module yellow_bitcoin">
+        <div class="payment_module yellow_bitcoin v15">
             <a href="{$link->getModuleLink('yellow_bitcoin', 'payment')|escape:'html'}" title="{l s='Pay with bitcoin' mod='yellow_bitcoin'}" class="yellow_bitcoin">
                 <img src="{$this_path_ssl|escape:false}views/img/bitcoin_accepted.png" height="30px" />
             </a>

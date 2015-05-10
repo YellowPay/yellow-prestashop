@@ -29,3 +29,17 @@ div.payment_module a.yellow_bitcoin {
     letter-spacing: -1px;
     position: relative;
 }
+
+/*******************************/
+/********** v1.5 fix ***********/
+div.payment_module.v15 a.yellow_bitcoin {
+    overflow: hidden;
+    padding: 20px 40px 20px 15px;
+    margin-bottom: 5px;
+}
+div.payment_module.v15 a.yellow_bitcoin:after {
+    /*content: none;*/
+}
+div.payment_module.v15 .what_is_bitcoin a{
+    font-size: 10px;
+}

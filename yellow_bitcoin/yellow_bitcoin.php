@@ -357,7 +357,9 @@ class Yellow_Bitcoin extends PaymentModule
 			'Content-type:application/json',
 			'API-Key:'.$public_key,
 			'API-Nonce:'.$nonce,
-			'API-Sign:'.$signature
+			'API-Sign:'.$signature,
+			'API-Platform: '.PHP_OS.' - PHP'.phpversion(),
+			'API-Plugin: prestashop '._PS_VERSION_
 		));
 		curl_setopt($http_client, CURLOPT_USERAGENT, 'PRESTASHOP STORE');
 		curl_setopt($http_client, CURLOPT_RETURNTRANSFER, 1);

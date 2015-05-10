@@ -29,7 +29,7 @@
 {/capture}
 
 <div class="row">
-    <div class="col-xs-12 col-md-6">
+    <div class="col-xs-12 col-md-12">
 		{if $yellow_iframe == 'no payment' || $yellow_iframe == 'disabled'}
             <div class="alert alert-warning">
                 {l s='This payment method currently unavailable, please use another method' mod='yellow_bitcoin'}
